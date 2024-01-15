@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    padding: 64px;
+    border-radius: 16px;
+    margin: 70px 64px;
+    background-color: #09C;
+}
