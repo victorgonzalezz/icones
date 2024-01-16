@@ -1,6 +1,10 @@
 .custom-icon-info-helperText {
   position: relative;
-  top: -19px;
-  color: #0288d1;
-  ;
+  top: 8px;
+  color: #1976d2;
+}
+
+.css-1qbl730-MuiFormHelperText-root {
+  margin-left: 30px !important;
+  margin-top: -12px !important;
 }

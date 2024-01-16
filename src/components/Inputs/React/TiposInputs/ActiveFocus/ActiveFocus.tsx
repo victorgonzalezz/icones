@@ -10,9 +10,9 @@ export default function ActiveFocus() {
     <TextField
      className="custom-for-all"
       id="standard-basic"
-      label="Padrão"
+      label="Activo / Focus"
       variant="standard"
-      placeholder="Placeholder"
+      placeholder="Valor"
       focused
       inputRef={inputRef}
       fullWidth

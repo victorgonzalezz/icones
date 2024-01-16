@@ -1,10 +1,10 @@
 .custom-icon-sucesso-helperText {
   position: relative;
-  top: -19px;
+  top: 8px;
   color: #086203;
-  ;
 }
 
-.css-1d1r5q-MuiFormHelperText-root {
-  color: #086203;
+.css-1jf3gue-MuiFormHelperText-root {
+  margin-left: 30px !important;
+  margin-top: -12px !important;
 }

@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { FormHelperText, TextField, ThemeProvider, createTheme } from "@mui/material";
 import { MdInfoOutline } from "react-icons/md";
 
 import "./style.css"
@@ -6,22 +6,37 @@ import "./style.css"
 
 import "../../../../../global.css"
 
+const theme = createTheme({
+  palette: {
+    success: {
+      main: "#1976d2",
+    },
+  },
+});
+
+
 export default function Informacao() {
   return (
     <>
-      <TextField
-        className="custom-for-all"
-        label="Informação"
-        color="info"
-        defaultValue="Valor"
-        helperText="Mensagem de info."
-        variant="standard"
-        focused
-        fullWidth
-      />
-      <div className="custom-icon-info-helperText">
-        <MdInfoOutline />
-      </div>
+      <ThemeProvider theme={theme}>
+        <TextField
+          className="custom-for-all"
+          label="Informação"
+          color="info"
+          defaultValue="Valor"
+          variant="standard"
+          focused
+          fullWidth
+        />
+        <div className="custom-icon-info-helperText">
+          <MdInfoOutline />
+        </div>
+        <FormHelperText sx={{ color: theme.palette.success.main }}>
+          Mensagem de info.
+        </FormHelperText>
+
+      </ThemeProvider>
+      
     </>
   )
 }
